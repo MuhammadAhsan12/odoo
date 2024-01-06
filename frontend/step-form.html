@@ -1,0 +1,556 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="images/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css">
+    
+</head>
+	
+<style type="text/css">
+    .slider-nav img {
+width: 100%;
+margin: 22px auto 0 0px;
+}
+#signUpForm .form-header {
+        gap: 5px;
+        text-align: center;
+        font-size: .9em;
+        padding-top: 140px;
+    }
+    #signUpForm .form-header .stepIndicator {
+        position: relative;
+        flex: 1;
+        padding-bottom: 30px;
+    }
+    #signUpForm .form-header .stepIndicator.active {
+        font-weight: 600;
+    }
+    #signUpForm .form-header .stepIndicator.finish {
+        font-weight: 600;
+        color: #009688;
+    }
+    #signUpForm .form-header .stepIndicator::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        z-index: 9;
+        width: 20px;
+        height: 20px;
+        background-color: #d5efed;
+        background-image: url(images/t-active1.png);
+        border-radius: 50%;
+        border: 3px solid #ecf5f4;
+    }
+    #signUpForm .form-header .stepIndicator.active::before {
+        background-color: #a7ede8;
+        border: 3px solid #d5f9f6;
+    }
+    #signUpForm .form-header .stepIndicator.finish::before {
+        background-color: #009688;
+        border: 3px solid #b7e1dd;
+    }
+    #signUpForm .form-header .stepIndicator::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 8px;
+        width: 100%;
+        height: 3px;
+        background-color: #f3f3f3;
+    }
+    #signUpForm .form-header .stepIndicator.active::after {
+        background-color: #a7ede8;
+    }
+    #signUpForm .form-header .stepIndicator.finish::after {
+        background-color: #009688;
+    }
+    #signUpForm .form-header .stepIndicator:last-child:after {
+        display: none;
+    }
+    #signUpForm input {
+        padding: 15px 20px;
+        width: 100%;
+        font-size: 1em;
+        border: 1px solid #e3e3e3;
+        border-radius: 5px;
+    }
+    #signUpForm input:focus {
+        border: 1px solid #009688;
+        outline: 0;
+    }
+    #signUpForm input.invalid {
+        border: 1px solid #ffaba5;
+    }
+    #signUpForm .step {
+      display: none;
+    }
+    #signUpForm .form-footer{
+        overflow:auto;
+        gap: 20px;
+    }
+    #signUpForm .form-footer button{
+        background-color: #009688;
+        border: 1px solid #009688 !important;
+        color: #ffffff;
+        border: none;
+        padding: 13px 30px;
+        font-size: 1em;
+        cursor: pointer;
+        border-radius: 5px;
+        flex: 1;
+        margin-top: 5px;
+    }
+    #signUpForm .form-footer button:hover {
+      opacity: 0.8;
+    }
+    
+    #signUpForm .form-footer #prevBtn {
+        background-color: #fff;
+        color: #009688;
+    }
+</style>
+</head>
+
+<body>
+	<header>
+		<div class="mobile-menu">
+			<div class="circle" id="navbar"><i class="fa fa-bars" aria-hidden="true"></i></div>
+
+
+			<div class="nveMenu text-left">
+				<div class="mobile-cross close-btn-nav" id="navbar"><i class="fas fa-times" aria-hidden="true"></i>
+				</div>
+				<div>
+					<a href="index.php"><img src="images\logo.png" class="img-fluid"></a>
+				</div>
+				<ul class="navlinks p-0 mt-4">
+					<li><a href="#">Get In Touch</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Case Studies</a></li>
+					<li><a href="#">Gallery</a></li>
+				</ul>
+			</div>
+			<div class="overlay"></div>
+		</div>
+		<div class="main-nav">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3">
+						<div class="logo">
+							<img src="images/logo.png" alt="">
+						</div>
+					</div>
+					<div class="col-lg-5">
+						<ul>
+							<li><a href="#!">Home</a></li>
+							<li><a href="#!">Shop</a></li>
+							<li><a href="#!">About US</a></li>
+							<li><a href="#!">Courses</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-4">
+						<ul>
+							<li> <div id="google_translate_element"></div></li>
+							<li>
+								<img src="images/bucket.png" alt="">
+								<sup>2</sup>
+							</li>
+							<li>
+								<img src="images/heart.png" alt="">
+								<sup>2</sup>
+							</li>
+							<li><a href="#">Login </a></li>
+						</ul>
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+    <section class="bredcrump-banner">
+        <div class="container">
+            <div class="breadcrump">
+                <ul>
+                    <li><a href="#!"><img src="images/home-icon.png" alt=""></a></li>
+                    <li><span>/</span><a href="#!"></a>Login</li>
+                </ul>
+            </div>
+        </div>
+    </section>   
+
+<section class="step-form">
+
+</section>
+    <form id="signUpForm" action="#!">
+        <!-- start step indicators -->
+        <div class="review-order-form">
+        <div class="form-header d-flex mb-4">
+            <span class="stepIndicator">Review Order</span>
+            <span class="stepIndicator">Add Details</span>
+            <span class="stepIndicator">Checkout</span>
+            <span class="stepIndicator">Checkout</span>
+        </div>
+        </div>
+        <!-- end step indicators -->
+    
+        <!-- step one -->
+        <div class="step">
+            <section class="add-to-cart">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-8 col-12">
+                            <div class="cart-content">
+                                <ul class="cart1">
+                                    <li><h3>Cart</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                        <img src="images/delete.svg" alt="">
+                                        <h5>Remove</h5>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <table class="cart-table">
+                                    <thead>
+                                    <tr>
+                                    <th>
+                                        <input type="checkbox" name="" id="">
+                                        <h3>Product</h3>
+                                    </th>
+                                    <th>
+                                        <h3>Quantity</h3>
+                                    </th>
+                                    <th>
+                                        <h3>Price</h3>
+                                    </th>
+                                    </tr>
+                                </thead>
+                                    <tbody><tr>
+                                        <td class="row">
+                                            <div class="left col-lg-3 col-md-3 col-3">
+                                            <input type="checkbox" name="" id="">
+                                            <img src="images/cart-product-1.png" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="right col-lg-6 col-md-6 col-7">
+                                                <h4>La Mesilla - Guatemala Coffee – Filter</h4>
+                                                <span>250kg</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="quantity">
+                                        </td>
+                                        <td>
+                                            <h4>170.50 SR</h4>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="row">
+                                            <div class="left col-lg-3 col-md-3 col-3">
+                                            <input type="checkbox" name="" id="">
+                                            <img src="images/cart-product-1.png" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="right col-lg-6 col-md-5 col-7">
+                                                <h4>La Mesilla - Guatemala Coffee – Filter</h4>
+                                                <span>250kg</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="quantity">
+                                        </td>
+                                        <td>
+                                            <h4>170.50 SR</h4>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="row">
+                                            <div class="left col-lg-3 col-md-3 col-3">
+                                            <input type="checkbox" name="" id="">
+                                            <img src="images/cart-product-1.png" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="right col-lg-6 col-md-6 col-7">
+                                                <h4>La Mesilla - Guatemala Coffee – Filter</h4>
+                                                <span>250kg</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="quantity">
+                                        </td>
+                                        <td>
+                                            <h4>170.50 SR</h4>
+                                        </td>
+                                    </tr>
+                                </tbody></table>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <div class="process">
+                                <ul>
+                                    <li>
+                                        <h4>SubTotal <span></span></h4>
+                                        <h3>391.8 SR</h3>
+                                    </li>
+                                    <li>
+                                        <h4>Discount</h4>
+                                        <h3>0 SR</h3>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <h4>Grand Total</h4>
+                                        <h3>391.8 SR</h3>
+                                    </li>
+                                    
+                                  
+                                </ul>
+                                <button>Process To Shipping</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    
+        <!-- step two -->
+        <div class="step">
+            <p class="text-center mb-4">Your presence on the social network</p>
+            <div class="mb-3">
+                <input type="text" placeholder="Linked In" oninput="this.className = ''" name="linkedin">
+            </div>
+            <div class="mb-3">
+                <input type="text" placeholder="Twitter" oninput="this.className = ''" name="twitter">
+            </div>
+            <div class="mb-3">
+                <input type="text" placeholder="Facebook" oninput="this.className = ''" name="facebook">
+            </div>
+        </div>
+    
+        <!-- step three -->
+        <div class="step">
+            <p class="text-center mb-4">We will never sell it</p>
+            <div class="mb-3">
+                <input type="text" placeholder="Full name" oninput="this.className = ''" name="fullname">
+            </div>
+            <div class="mb-3">
+                <input type="text" placeholder="Mobile" oninput="this.className = ''" name="mobile">
+            </div>
+            <div class="mb-3">
+                <input type="text" placeholder="Address" oninput="this.className = ''" name="address">
+            </div>
+        </div>
+    
+        <!-- start previous / next buttons -->
+        <div class="form-footer d-flex">
+            <div class="container">
+            <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+            <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+        </div>
+        </div>
+        <!-- end previous / next buttons -->
+    </form>
+
+    <footer class="contact-detail">
+        <div class="copyright">
+            <p>© 2023 AQAHI. All rights reserved. </p>
+        </div>
+    </footer>
+
+
+
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/popper-min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/all.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+       $('.slider-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        loop: true,
+        fade: true,
+        asNavFor: '.slider-nav'
+      });
+      $('.slider-nav').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.slider-for',
+        dots: false,
+        loop: true,
+        arrows: false,
+        centerMode: false,
+        focusOnSelect: true
+      });
+    </script>
+    <script>
+        $('.equipment').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            dots: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 4
+                }
+            }
+        });
+        $('.beverage').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: false,
+            dots: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        });
+
+    </script>
+ <script>
+      $(document).ready(function(){
+
+var quantitiy=0;
+   $('.quantity-right-plus').click(function(e){
+        
+        // Stop acting like a button
+        e.preventDefault();
+        // Get the field name
+        var quantity = parseInt($('#quantity').val());
+        
+        // If is not undefined
+            
+            $('#quantity').val(quantity + 1);
+
+          
+            // Increment
+        
+    });
+
+     $('.quantity-left-minus').click(function(e){
+        // Stop acting like a button
+        e.preventDefault();
+        // Get the field name
+        var quantity = parseInt($('#quantity').val());
+        
+        // If is not undefined
+      
+            // Increment
+            if(quantity>0){
+            $('#quantity').val(quantity - 1);
+            }
+    });
+    
+});
+    </script>
+    <script>
+        var currentTab = 0; // Current tab is set to be the first tab (0)
+        showTab(currentTab); // Display the current tab
+        
+        function showTab(n) {
+          // This function will display the specified tab of the form...
+          var x = document.getElementsByClassName("step");
+          x[n].style.display = "block";
+          //... and fix the Previous/Next buttons:
+          if (n == 0) {
+            document.getElementById("prevBtn").style.display = "none";
+          } else {
+            document.getElementById("prevBtn").style.display = "inline";
+          }
+          if (n == (x.length - 1)) {
+            document.getElementById("nextBtn").innerHTML = "Submit";
+          } else {
+            document.getElementById("nextBtn").innerHTML = "Next";
+          }
+          //... and run a function that will display the correct step indicator:
+          fixStepIndicator(n)
+        }
+        
+        function nextPrev(n) {
+          // This function will figure out which tab to display
+          var x = document.getElementsByClassName("step");
+          // Exit the function if any field in the current tab is invalid:
+          if (n == 1 && !validateForm()) return false;
+          // Hide the current tab:
+          x[currentTab].style.display = "none";
+          // Increase or decrease the current tab by 1:
+          currentTab = currentTab + n;
+          // if you have reached the end of the form...
+          if (currentTab >= x.length) {
+            // ... the form gets submitted:
+            document.getElementById("signUpForm").submit();
+            return false;
+          }
+          // Otherwise, display the correct tab:
+          showTab(currentTab);
+        }
+        
+        function validateForm() {
+          // This function deals with validation of the form fields
+          var x, y, i, valid = true;
+          x = document.getElementsByClassName("step");
+          y = x[currentTab].getElementsByTagName("input");
+          // A loop that checks every input field in the current tab:
+          for (i = 0; i < y.length; i++) {
+            // If a field is empty...
+            if (y[i].value == "") {
+              // add an "invalid" class to the field:
+              y[i].className += " invalid";
+              // and set the current valid status to false
+              valid = false;
+            }
+          }
+          // If the valid status is true, mark the step as finished and valid:
+          if (valid) {
+            document.getElementsByClassName("stepIndicator")[currentTab].className += " finish";
+          }
+          return valid; // return the valid status
+        }
+        
+        function fixStepIndicator(n) {
+          // This function removes the "active" class of all steps...
+          var i, x = document.getElementsByClassName("stepIndicator");
+          for (i = 0; i < x.length; i++) {
+            x[i].className = x[i].className.replace(" active", "");
+          }
+          //... and adds the "active" class on the current step:
+          x[n].className += " active";
+        }
+    </script>
+</body>
+
+</html>

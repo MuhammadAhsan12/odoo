@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2 id="data"></h2>
+    
+</body>
+
+</html>
+<script>
+    const url = 'http://localhost/odooo/backend/odooAuth.php';
+
+    fetch(url)
+        .then((response) => {
+            return response.json();
+        })
+        .then((data) => {
+            // console.log(data);
+            let products = data;
+            products.map(function (product) {
+                
+            });
+        }).catch(function (error) {
+            console.log(error);
+        });
+
+//     async function logMovies() {
+//   const response = await fetch("http://localhost/odooo/backend/odooAuth.php");
+//   const movies = await response.json();
+//   console.log(movies);
+// }
+
+// logMovies();
+
+</script>

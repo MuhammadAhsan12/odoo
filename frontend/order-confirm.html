@@ -1,0 +1,361 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Order Confirm</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="images/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+   
+ 
+
+</head>
+
+<body>
+    <header>
+        <div class="mobile-menu">
+			<div class="circle" id="navbar"><i class="fa fa-bars" aria-hidden="true"></i></div>
+
+
+			<div class="nveMenu text-left">
+				<div class="mobile-cross close-btn-nav" id="navbar"><i class="fas fa-times" aria-hidden="true"></i>
+				</div>
+				<div>
+					<a href="index.html"><img src="images\logo.png" class="img-fluid"></a>
+				</div>
+				<ul class="navlinks p-0 mt-4">
+					<li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Shop</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+             
+								<img src="images/bucket.png" alt="">
+								<sup>2</sup>
+							</li>
+							<li>
+								<img src="images/heart.png" alt="">
+								<sup>2</sup>
+							</li>
+							<li><a href="#">Login </a></li>
+				</ul>
+			</div>
+			<div class="overlay"></div>
+		</div>
+        <div class="main-nav inner-main-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="logo">
+                            <a href="index.html"><img src="images/logo.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="product.html">Shop</a></li>
+							<li><a href="about.html">About Us</a></li>
+							<li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4">
+                        <ul>
+                            <li>
+                                <div id="google_translate_element">
+                                    
+                                </div>
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                            </li>
+                            <li>
+                                <a href="cart.html">
+									<img src="images/bucket.png" alt="">
+                                <sup>2</sup>
+								</a>
+                            </li>
+                            <li>
+                                <img src="images/heart.png" alt="">
+                                <sup>2</sup>
+                            </li>
+                            <li class="user-login"><a href="signin.html"><img src="images/user-login.png" /> </a></li>
+                        </ul>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="bredcrump-banner">
+        <div class="container">
+            <div class="breadcrump">
+                <ul>
+                    <li><a href="index.html"><img src="images/home-icon.png" alt=""></a></li>
+                    <li><span>/</span><a href="#!"></a>Order Confirm</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="cart-sec">
+        <div class="container">
+            <div class="review-order-form">
+                <ul>
+                    <li><a href="cart.html"><span><img src="images/t-active1.png" alt=""></span><h4>Review Order</h4></a></li>
+                    <li><a href="shipping.html"><span><img src="images/t-active.png" alt=""></span><h4>Add Details</h4></a></li>
+                    <li><a href="checkout.html"><span><img src="images/t-active1.png" alt=""></span><h4>Checkout</h4></a></li>
+                    <li><a href="order-confirm.html"><span><img src="images/t-active1.png" alt=""></span><h4>Order Cancelation</h4></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="payment-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-6 col-12">
+                    <div class="order-cont">
+                        <ul>
+                            <li>   <h1>Order <b id="orderId"></b> Confirmed</h1>
+                                <h4>Thank you for your Order</h4></li>
+                                <li><a href="#!">Print</a></li>
+                        </ul>
+                        <h3>Payment Information</h3>
+                        <div class="check">
+                            <img src="images/Check.png" alt="">
+                            <h5>Thank You</h5>
+                            <h3>Your Order is Confirmed</h3>
+                            <p>Your order will oroccess as soon as possible</p>
+                        </div>
+                        <div class="order-detail">
+                      <span><h5>Payfort</h5>
+                        <h6 id="subTotal"></h6></span>
+                        <p>Your payment has been successful processed , Thank you.</p>
+                        <p><b>Billing & Shipping:</b> Salam ibn Hameed ibn Saud, Riyadh 12211, 12711, Saud Arabia</p>
+                    </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6 col-12">
+                    <div class="order-summery">
+                       <h3>Order Summary</h3>
+                       <div class="pb-4" id="order_summary">
+                        <!-- <ul>
+                            <li class="order-product-image"><img src="images/cart-product-1.png" alt=""></li>
+                            <li class="order-product-title">
+                                <h4>La Mesilla - Guatemala Coffee – Filter</h4>
+                                <h5>250g</h5>
+                            </li>
+                            <li><p>170.50 SR</p>
+                            <span>Qty: 1</span></li>
+                        </ul> -->
+                        </div>
+                       <ul class="subtotal">
+                        <li>
+                            <h4 >SubTotal <span id="subTotal"></span></h4>
+                            
+                        </li>
+                        <li>
+                            <h4>Discount   <span>0 SR</span></h4>
+                          
+                        </li>
+                       </ul>
+                       <ul class="subtotal">
+                        <li>
+                            <h4 >Total </h4>
+                            <h5>Loren Ipsum Loren ipsum <span id="Total"></span></h5>
+                            
+                        </li>  
+                       </ul>
+                       <img src="images/about-before.png" alt="" class="ordr-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="contact-detail">
+        <div class="copyright">
+            <p>© 2023 AQAHI. All rights reserved. </p>
+        </div>
+    </footer>
+
+<script>
+
+const url_invoice = 'http://localhost/odooo/backend/api/invoice/createInvoice.php';
+  
+  fetch(url_invoice)
+.then((response) => {
+if (!response.ok) {
+throw new Error('Network response was not ok');
+}
+return response.json();
+})
+.then((data) => {
+    console.log(data);
+})
+  .catch(function (error) {
+    console.error('Fetch error:', error);
+  });
+
+  
+
+     const url_product = 'http://localhost/odooo/backend/api/getCartContent.php';
+  
+  fetch(url_product)
+.then((response) => {
+if (!response.ok) {
+throw new Error('Network response was not ok');
+}
+return response.json();
+})
+.then((data) => {
+let products = data;
+const cartContainer = document.getElementById('order_summary');
+console.log(products);
+let subTotal=0;
+let order_id;
+// Assuming newdata is an array you want to iterate over
+products.forEach(function (data) {
+let cartHTML = `<ul>
+                            <li class="order-product-image"><img src="images/cart-product-1.png" alt=""></li>
+                            <li class="order-product-title">
+                                <h4>${data['name_short']}</h4>
+                                <h5>250g</h5>
+                            </li>
+                            <li><p>${data['price_unit']*data['product_uom_qty']} SR</p>
+                            <span>Qty: ${data['product_uom_qty']}</span></li>
+                        </ul>
+  `;    
+  subTotal+=data['price_unit']*data['product_uom_qty'];
+  order_id=data['order_id'][1];
+  console.log(data['order_id'][1]);
+cartContainer.innerHTML += cartHTML;
+console.log(data['name_short']);
+// 
+});
+document.getElementById('subTotal').innerHTML=subTotal+' SR';
+document.getElementById('Total').innerHTML=subTotal+' SR';
+document.getElementById('orderId').innerHTML=order_id;
+   
+})
+  .catch(function (error) {
+    console.error('Fetch error:', error);
+  });
+
+</script>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/popper-min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/all.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+       $('.slider-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        loop: true,
+        fade: true,
+        asNavFor: '.slider-nav'
+      });
+      $('.slider-nav').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.slider-for',
+        dots: false,
+        loop: true,
+        arrows: false,
+        centerMode: false,
+        focusOnSelect: true
+      });
+    </script>
+    <script>
+        $('.equipment').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            dots: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 4
+                }
+            }
+        });
+        $('.beverage').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: false,
+            dots: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        });
+
+    </script>
+ <script>
+      $(document).ready(function(){
+
+var quantitiy=0;
+   $('.quantity-right-plus').click(function(e){
+        
+        // Stop acting like a button
+        e.preventDefault();
+        // Get the field name
+        var quantity = parseInt($('#quantity').val());
+        
+        // If is not undefined
+            
+            $('#quantity').val(quantity + 1);
+
+          
+            // Increment
+        
+    });
+
+     $('.quantity-left-minus').click(function(e){
+        // Stop acting like a button
+        e.preventDefault();
+        // Get the field name
+        var quantity = parseInt($('#quantity').val());
+        
+        // If is not undefined
+      
+            // Increment
+            if(quantity>0){
+            $('#quantity').val(quantity - 1);
+            }
+    });
+    
+});
+    </script>
+</body>
+
+</html>

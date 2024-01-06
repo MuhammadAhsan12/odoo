@@ -1,0 +1,316 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Sign In</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="images/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+   
+ 
+
+</head>
+
+<body>
+    <header>
+        <div class="mobile-menu">
+			<div class="circle" id="navbar"><i class="fa fa-bars" aria-hidden="true"></i></div>
+
+
+			<div class="nveMenu text-left">
+				<div class="mobile-cross close-btn-nav" id="navbar"><i class="fas fa-times" aria-hidden="true"></i>
+				</div>
+				<div>
+					<a href="index.html"><img src="images\logo.png" class="img-fluid"></a>
+				</div>
+				<ul class="navlinks p-0 mt-4">
+					<li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Shop</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+             
+						<img src="images/bucket.png" alt="">
+								<sup>2</sup>
+							</li>
+							<li>
+								<img src="images/heart.png" alt="">
+								<sup>2</sup>
+							</li>
+							<li><a href="#">Login </a></li>
+				</ul>
+			</div>
+			<div class="overlay"></div>
+		</div>
+        <div class="main-nav inner-main-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="logo">
+                            <a href="index.html"><img src="images/logo.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="product.html">Shop</a></li>
+							<li><a href="about.html">About Us</a></li>
+							<li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4">
+                        <ul>
+                            <li>
+                                <div id="google_translate_element">
+                                    
+                                </div>
+                                <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                            </li>
+                            <li>
+                                <a href="cart.html">
+									<img src="images/bucket.png" alt="">
+                                <sup>2</sup>
+								</a>
+                            </li>
+                            <li>
+                                <img src="images/heart.png" alt="">
+                                <sup>2</sup>
+                            </li>
+                            <li class="user-login"><a href="signin.html"><img src="images/user-login.png" /> </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="bredcrump-banner">
+        <div class="container">
+            <div class="breadcrump">
+                <ul>
+                    <li><a href="index.html"><img src="images/home-icon.png" alt=""></a></li>
+                    <li><span>/</span><a href="#!"></a>Login</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="login-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-5 col-12">
+                    <img src="images/login-img.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-6 col-md-7 col-12">
+                    <div class="login-form">
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                    aria-selected="true">Login</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-profile" type="button" role="tab"
+                                    aria-controls="pills-profile" aria-selected="false">Register</button>
+                            </li>
+
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                aria-labelledby="pills-home-tab">
+                                <form action="../backend/odooAuth.php" method="post">
+                                    <input type="email" name="user_email" placeholder="Email">
+                                    <input type="password" name="user_password" placeholder="Password">
+                                    <button type="submit" name="login">Log in</button>
+                                    <a href="forget.html">Forgot Your Password?</a>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                aria-labelledby="pills-profile-tab">
+                                 <form id="signinForm" action="../backend/odooAuth.php" method="post">
+                                    <input type="text" name="full_name" placeholder="Full Name">
+                                    <input type="number" name="phone_number" placeholder="Phone Number">
+                                    <input type="email" name="user_email" placeholder="Email">
+                                    <input type="password" name="user_password" placeholder="Password">
+                                    <button type="submit" name="signup">Register</button>
+                                </form></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer class="signin-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="signin-ftr-social">
+                        <ul>
+                            <li><a href=""><img src="images/instagram.png"></a></li>
+                            <li><a href=""><img src="images/facebook.png"></a></li>
+                            <li><a href=""><img src="images/globe.png"></a></li>
+                            <li><a href=""><img src="images/twitter.png"></a></li>
+                            <li><a href=""><img src="images/youtube.png"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="signin-ftr-logo">
+                        <img src="images/logo-black.png">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="signin-ftr-right">
+                        <img src="images/about-before.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <footer class="contact-detail">
+        <div class="copyright">
+            <p>© 2023 AQAHI. All rights reserved. </p>
+        </div>
+    </footer>
+
+
+
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/popper-min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/all.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+       $('.slider-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        loop: true,
+        fade: true,
+        asNavFor: '.slider-nav'
+      });
+      $('.slider-nav').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.slider-for',
+        dots: false,
+        loop: true,
+        arrows: false,
+        centerMode: false,
+        focusOnSelect: true
+      });
+    </script>
+    <script>
+        $('.equipment').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            dots: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 4
+                }
+            }
+        });
+        $('.beverage').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: false,
+            dots: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        });
+
+    </script>
+ <script>
+      $(document).ready(function(){
+
+var quantitiy=0;
+   $('.quantity-right-plus').click(function(e){
+        
+        // Stop acting like a button
+        e.preventDefault();
+        // Get the field name
+        var quantity = parseInt($('#quantity').val());
+        
+        // If is not undefined
+            
+            $('#quantity').val(quantity + 1);
+
+          
+            // Increment
+        
+    });
+
+     $('.quantity-left-minus').click(function(e){
+        // Stop acting like a button
+        e.preventDefault();
+        // Get the field name
+        var quantity = parseInt($('#quantity').val());
+        
+        // If is not undefined
+      
+            // Increment
+            if(quantity>0){
+            $('#quantity').val(quantity - 1);
+            }
+    });
+
+    setTimeout(() => {
+
+        // alert($('.VIpgJd-ZVi9od-l4eHX-hSRGPd').parent().parent().replace('Powered by ,',''));
+        
+        $('.VIpgJd-ZVi9od-l4eHX-hSRGPd').parent().remove();
+
+
+        $(".goog-te-combo option").each(function(){
+
+            console.log($(this).val()) 
+    // Add $(this).val() to your list
+});
+
+
+        
+
+
+    }, 500);
+
+
+    
+});
+    </script>
+</body>
+
+</html>
